@@ -1,5 +1,5 @@
 :root {
-    --cor_bg_body: rgb(250, 249, 249);
+    --cor_bg_body: rgb(240, 239, 239);
     --cor_bg_escuro: rgb(37, 34, 34);
 
     --tam_fonte_header: 1.5rem;
@@ -12,6 +12,9 @@
     --cor_fonte_ativo: rgb(255, 174, 0);
 
     --espacamento_footer: calc(100vh - 9rem);
+    --espacamento_titulo: 5rem;
+    --espacamento_paragrh1: 3rem;
+    --espacamento_paragrh2: 2rem;
 }
 
 body {

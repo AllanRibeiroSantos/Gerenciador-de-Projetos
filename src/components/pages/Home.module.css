@@ -6,7 +6,7 @@
 }
 
 .main_titulo {
-    margin-top: 5rem;
+    margin-top: var(--espacamento_titulo);
 }
 
 .main_titulo_span {
@@ -16,7 +16,7 @@
 }
 
 .main_paragr {
-    margin-top: 3rem;
+    margin-top: var(--espacamento_paragrh1);
 }
 
 .main_savings_img {

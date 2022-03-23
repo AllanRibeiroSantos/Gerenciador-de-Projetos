@@ -1,16 +1,18 @@
-.main_button {
+.main_submitbutton {
     margin-top: 1.5rem;
     background-color: var(--cor_bg_escuro);
     color: var(--cor_fonte_branco);
     font-size: var(--tam_fonte_header);
     border: none;
     padding: 0.5rem;
+    text-decoration: none;
+    width: fit-content;
 }
 
-.main_button:active {
+.main_submitbutton:active {
     color: var(--cor_fonte_ativo);
 }
 
-.main_button:hover {
+.main_submitbutton:hover {
     cursor: pointer;
 }

@@ -9,7 +9,7 @@ import Projetos from './components/pages/Projetos';
 import Empresa from './components/pages/Empresa';
 import Contato from './components/pages/Contato';
 import Footer from './components/layout/Footer';
-
+import NovoProjeto from './components/pages/NovoProjeto';
 
 function App() {
   return (
@@ -17,9 +17,10 @@ function App() {
       <Header />
       <Routes>
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/projetos' element={<Projetos />} />
-        <Route exact path='/empresa' element={<Empresa />} />
-        <Route exact path='/contato' element={<Contato />} />
+        <Route path='/projetos' element={<Projetos />} />
+        <Route path='/empresa' element={<Empresa />} />
+        <Route path='/contato' element={<Contato />} />
+        <Route path='/novoprojeto' element={<NovoProjeto />} />
       </Routes>
       <Footer />
     </Router>
