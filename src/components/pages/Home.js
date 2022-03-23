@@ -12,7 +12,7 @@ export default function Home() {
             <p className={styles.main_paragr}>
                 Comece a gerenciar os seus projetos agora mesmo!
             </p>
-            <LinkButton to='/novoprojeto' value="Criar Projeto" />
+            <LinkButton to='/novoprojeto' text="Criar Projeto" />
             <img className={styles.main_savings_img} src={savings} />
         </main>
     )

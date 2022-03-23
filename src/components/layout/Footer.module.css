@@ -5,6 +5,7 @@
     background-color: var(--cor_bg_escuro);
     color: var(--cor_fonte_branco);
     padding: 3rem 0;
+    margin-top: 4rem;
 }
 
 .footer_span {
