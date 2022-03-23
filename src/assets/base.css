@@ -1,0 +1,28 @@
+:root {
+    --cor_bg_body: rgb(250, 249, 249);
+    --cor_bg_escuro: rgb(37, 34, 34);
+
+    --tam_fonte_header: 1.5rem;
+    --tam_fonte_body: 1.2rem;
+    --tam_fonte_h1: 3rem;
+
+    --cor_fonte_branco: rgb(230, 224, 224);
+    --cor_fonte_cinza: rgb(144, 142, 142);
+    --cor_fonte_preto: black;
+    --cor_fonte_ativo: rgb(255, 174, 0);
+
+    --espacamento_footer: calc(100vh - 9rem);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--cor_fonte_cinza);
+    background-color: var(--cor_bg_body);
+    font-size: var(--tam_fonte_body);
+}
+
+h1 {
+    font-size: var(--tam_fonte_h1);
+    font-weight: 900;
+    color: var(--cor_fonte_preto);
+}

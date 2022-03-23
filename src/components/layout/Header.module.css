@@ -1,0 +1,27 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor_bg_escuro);
+    color: var(--cor_fonte_branco);
+    font-size: var(--tam_fonte_header);
+    padding: 2rem 5rem;
+}
+
+.header_containerList {
+    display: flex;
+}
+
+.header_list a {
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.header_list a:visited,
+.header_list a:link {
+    color: inherit;
+}
+
+.header_list a:hover {
+    color: var(--cor_fonte_ativo);
+}

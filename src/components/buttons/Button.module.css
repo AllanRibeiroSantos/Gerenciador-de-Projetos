@@ -1,0 +1,16 @@
+.main_button {
+    margin-top: 1.5rem;
+    background-color: var(--cor_bg_escuro);
+    color: var(--cor_fonte_branco);
+    font-size: var(--tam_fonte_header);
+    border: none;
+    padding: 0.5rem;
+}
+
+.main_button:active {
+    color: var(--cor_fonte_ativo);
+}
+
+.main_button:hover {
+    cursor: pointer;
+}
