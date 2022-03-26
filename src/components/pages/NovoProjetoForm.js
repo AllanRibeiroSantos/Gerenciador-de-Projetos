@@ -1,11 +1,28 @@
 import React from 'react'
+import { useEffect, useState } from 'react';
 import SubmitButton from '../buttons/SubmitButton';
 import Input from '../form/Input';
+import Select from '../form/Select';
 import styles from './NovoProjetoForm.module.css';
 
 export default function NovoProjetoForm() {
-  return (
-    <form className={styles.novoprojeto_form}>
+
+	const [categorias, setCategorias] = useState([]);
+
+	useEffect(() => {
+		fetch('http://localhost:3001/categorias', {
+			method: 'GET',
+			headers: {
+				'Content-Type': 'aplication/json'
+			}
+		})
+		 .then(resposta => resposta.json())
+		 .then(data => setCategorias(data))
+		 .catch(erro => console.log(erro))
+	}, []);
+
+	return (
+		<form className={styles.novoprojeto_form}>
 			<Input
 				type='text'
 				name='nomeProjeto'
@@ -18,13 +35,8 @@ export default function NovoProjetoForm() {
 				placeholder='Insira o orçamento total'
 				text='Orçamento do projeto:'
 			/>
-			<label className={styles.novoprojeto_form_label}>
-				Selecione a categoria:
-			</label>
-			<select>
-				<option selected={true} disabled={true}>Selecione uma opção</option>
-			</select>
+			<Select options={categorias} text='Selecione a categoria:' />
 			<SubmitButton text='Criar Projeto' />
 		</form>
-  )
+	)
 }

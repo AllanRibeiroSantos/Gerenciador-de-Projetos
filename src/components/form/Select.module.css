@@ -1,0 +1,7 @@
+.form_label {
+  color: black;
+}
+
+.form_label:not(:first-child) {
+  margin-top: 2rem;
+}

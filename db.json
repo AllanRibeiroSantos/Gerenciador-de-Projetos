@@ -1,0 +1,25 @@
+{
+  "projetos": [],
+  "categorias": [
+    {
+      "id": 1,
+      "name": "DevOps"
+    },
+    {
+      "id": 2,
+      "name": "Front-end"
+    },
+    {
+      "id": 3,
+      "name": "Back-end"
+    },
+    {
+      "id": 4,
+      "name": "Machine Learning"
+    },
+    {
+      "id": 5,
+      "name": "Marketing"
+    }
+  ]
+}
